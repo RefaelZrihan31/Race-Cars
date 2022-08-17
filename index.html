@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" sizes="192x192"
+        href="data:image/png;base64,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">
+    <title>KA CHOW</title>
+</head>
+
+<body>
+
+    <header class="viewport-header">
+        <div class="card">
+            <div class="card-title">
+                <h5> Welcome to our site</h5>
+            </div>
+            <ul style="list-style: none;">
+                <li> <a href="register.html"> <button type="submit"
+                            class="btn btn-outline-danger btn-lg btn-light w-25">
+                            Register
+                        </button>
+                    </a>
+                </li>
+                <br>
+                <li><a href="login.html">
+                        <button type="submit" class="btn btn-outline-warning btn-lg btn-light w-25">
+                            Log In
+                        </button>
+                    </a>
+
+                </li>
+                <br>
+                <li><img class="img-fluid" style="width: 10%;" src="Photo/racelogo.png" alt=""> <a href="about.html">
+                        <button type="submit" class="btn btn-outline-success btn-lg btn-light w-25">
+                            <div class="button-size">
+                                E n t e r
+                            </div>
+                        </button>
+                    </a>
+                    <img class="img-fluid" style="width: 10%;" src="Photo/racelogo.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <div id="myVideo">
+        <video id="videobg" autoplay muted loop>
+            <source src="Photo/race_video.mp4">
+        </video>
+    </div>
+
+
+
+   
+
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+$theme-colors:(text: white,
+    head-ferari: red,
+    head-lemans: gray,
+    head-wrc: orange,
+    h1:white);
+
+$base-font-size:1em;
+
+
+
+
+@keyframes rotation {
+
+
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" sizes="192x192"
+        href="data:image/png;base64,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">
+    <title>Le Mans</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <header class="fixed-top">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <div style="width: 8%;">
+                            <a href="index.html"> <img class="img-fluid" src="Photo/racelogo.png" alt=""></a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="about.html">Home Page</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="history.html">History</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Teams&Drivers
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="f1.html">Formula1</a></li>
+                                        <li><a class="dropdown-item" href="rally.html">Rally</a></li>
+                                        <li><a class="dropdown-item" href="lemans.html">Le Mans</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item nav">
+                                    <a class="nav-link" href="register.html">Register</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="login.html">Log In</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <!--נהגים-->
+        <div class="carouselslidedrive">
+            <div id="carouselExampleCaptions" class="carousel slide w-75" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/Photo/le mans/MIKE CONWAY.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>MIKE CONWAY</h3>
+                            <p>
+                                He competed in the British F3 in 2005 becoming a champion the following year. In 2007,
+                                he competed in GP2 as well as signing as a test driver for F1. In 2009, he competed in
+                                the American IndyCar Series. (until 2014) From 2013, he also competed in the WEC winning
+                                four times in LMP2. In 2014, he became a WEC reserve driver for TOYOTA GAZOO Racing
+                                competing in three races and winning one. He became a regular WEC driver from 2015 and
+                                in 24 hours of Le Mans, he paired with Kamui Kobayashi and other teammates.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/Photo/le mans/alonso fernando.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Alonso Fernando </h3>
+                            <p>Fernando Alonso Díaz is a Spanish racing driver who won the Formula One
+                                World Drivers' Championship in 2005 and 2006 with Renault, having also driven for
+                                McLaren, Ferrari and Minardi. With Toyota, Alonso won the 24 Hours of Le Mans twice, in
+                                2018 and 2019, and the FIA World Endurance Championship in 2018–19. In 2019, he won the
+                                24 Hours of Daytona with Wayne Taylor Racing.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/Photo/le mans/Phil hanson.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Philip Hanson</h3>
+                            <p>In September 2020 Phil followed this with victory in the LMP2 class in the delayed Le
+                                Mans 24 Hours, thereby securing the LMP2 title with a race in hand. By doing so, he
+                                became the first driver to win the FIA World Endurance Championship (LMP2), European Le
+                                Mans Series and the Le Mans 24 Hours (LMP2) all in the same year. He is also the
+                                youngest driver ever to win a WEC title and the youngest British driver to win LMP2 at
+                                Le Mans.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/Photo/le mans/jan lammers.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Jan Lammers</h3>
+                            <p>In 1988, Lammers, together with Andy Wallace and Johnny Dumfries, won the Le Mans with
+                                the Silk Cut Jaguar/TWR team. Lammers drove 13 out of the 24 hours, and beat the Porsche
+                                team who had remained unbeaten since 1981. Lammers and the team managed to finish first
+                                despite a broken gearbox. It was the first victory for Jaguar since 1957.
+
+                                For this feat, Jan Lammers received the title Honorary Member of the BRDC, a title
+                                rarely awarded to non-British residents.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <!--קבוצות-->
+        <div class="carouselslidedrive vh-50">
+            <div id="carouselExampleDark" class="carousel slide w-75 " data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="Photo/le mans/MIKE CONWAY car.jpg" class="d-block w-100 " alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Whelen Engineering Racing</h3>
+                            <p>Action Express Racing (AXR) is a sports car racing team that currently competes in the
+                                IMSA WeatherTech SportsCar Championship. The team is owned by NASCAR CEO Jim France
+                                and run by Bob Johnson and former NASCAR champion crew chief Gary Nelson. Based in
+                                Denver, North Carolina, the team currently fields the No. 31 Whelen Engineering Cadillac
+                                DPi-V.R for Felipe Nasr and Pipo Derani.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="Photo/le mans/alonso fernando car.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Wayne Taylor Racing</h3>
+                            <p>Wayne Taylor Racing is a sports car racing team that competes in the IMSA SportsCar
+                                Championship Prototype class. The team campaigns the No. 10 Konica Minolta sponsored
+                                Acura ARX-05.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="Photo/le mans/Phil hanson car.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>United Autosports</h3>
+                            <p>
+                                The team is contesting the FIA World Endurance Championship, European Le Mans
+                                Series and Michelin Le Mans Cup in 2020.
+                                Paul Di Resta (second left), Phil Hanson and Filipe Albuquerque won the 2020 Spa 6 Hours
+                                WEC race in August
+                                United Autosports also prepares and races a range of historic race cars in events across
+                                the world, such as the Rolex Monterey Motorsports Reunion and the Le Mans and
+                                Silverstone Classics.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Photo/le mans/jan lammers car.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Racing Team Nederland</h3>
+                            <p>
+                                The team started in the 2017 European Le Mans Series with a Dallara P217 ending the
+                                season on 11th place in LMP2 with 12.5 points. During the Le Mans race that year the
+                                third driver was former F1 driver Rubens Barrichello. Jan and Rubens know each other
+                                from when Rubens tested a Formula Opel Lotus from Jan years ago. In 2017 they
+                                have finished Le Mans 13th overall (11th in class)
+                            </p>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="container-fluid-auto">
+            <div class="card bg-secondary">
+                <div class="card-img-overlay">
+                    <ul class="list-inline">
+                        <button type="button" class="btn btn-dark btn-sxxl"> <a href="contact.html">Contact us</a>
+                        </button>
+                    </ul>
+                    <!--הרשמה לעיתון-->
+                    <form class="row g-3" method="GET" action="thanks.html">
+                        <div class="col-auto">
+                            <p for="staticEmail2">Sign up to our newsletter</p>
+
+                        </div>
+                        <div class="col-auto">
+                            <label class="visually-hidden">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-danger mb-3">send</button>
+                        </div>
+                    </form>
+
+                    <div class="sponsers  border-start-0 border-top-0">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-4">
+                                    <a href="https://www.redbull.com/int-en/" target="_blank"><img class="img-fluid"
+                                            src="Photo/logos/redbull.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="https://www.rolex.com/?ef_id=Cj0KCQiAjKqABhDLARIsABbJrGlcztgjUtJvHJyvVUpgH_t1kQTui8QfE2We1E-J6in3dJ2w5xzUdeoaAo_qEALw_wcB:G:s&s_kwcid=AL!141!3!407237634176!e!!g!!rolex"
+                                        target="_blank"><img class="img-fluid" src="Photo/logos/rolex.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="https://www.24h-lemans.com/en" target="_blank"><img class="img-fluid"
+                                            src="Photo/logos/24_hours_Le_mans_logo.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="https://www.motul.com/" target="_blank"><img class="img-fluid"
+                                            src="Photo/logos/motul.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="https://www.aisin.com/" target="_blank"><img class="img-fluid"
+                                            src="Photo/logos/aisin.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="https://www.goodyear.com/en-US/international?expand=international"
+                                        target="_blank"><img class="img-fluid" src="Photo/logos/good year.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label class="copy">Designed by Barak & Refael &copy;</label>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>
